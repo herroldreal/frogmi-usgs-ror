@@ -1,0 +1,11 @@
+<div class="max-w-screen-sm mx-auto">
+  <div id="root-view"></div>
+
+  <%= content_for :page_title do %>
+    Datos Sismicos
+  <% end %>
+
+  <div id="sismic-view" <%= add_vue_props(@features) %>></div>
+
+  <div id="lazy-load"></div>
+</div>

@@ -1,0 +1,17 @@
+<head>
+  <title>
+    <% if content_for?(:page_title) %>
+      <%= yield :page_title %> |
+    <% end %>
+    Frogmi
+  </title>
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= vite_client_tag %>
+  <%= vite_stylesheet_tag 'application.css' %>
+  <%= vite_typescript_tag 'application' %>
+  <%= vite_typescript_tag 'turbo-vue' %>
+</head>
